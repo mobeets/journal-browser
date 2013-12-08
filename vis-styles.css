@@ -1,0 +1,25 @@
+/*
+VISUALIZATION
+*/
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: black ;
+  stroke: black;
+}
+.bar:hover {
+  fill: white;
+}
+
+.x.axis path {
+  display: none;
+}
+.tick {
+  display: none;
+}
