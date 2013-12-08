@@ -30,6 +30,7 @@ function update_chart(year, month) {
   chart_div = get_chart_div(month);
 
   data = all_data.filter(function(d) { return d.year == year && d.month == month; });
+
   x.domain(data.map(function(d) { return d.i; }));
   y.domain([0, d3.max(data, function(d) { return d.count; })]);
 
